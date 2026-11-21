@@ -1,0 +1,1 @@
+import{s as e}from"./common-cljPXqia.js";function t(...e){return e.filter(Boolean).join(`/`)}function n(e){return t(e.path,e.name)}function r(e,n){let r=e.split(/[\\/]/).filter(e=>e&&e!==`.`&&e!==`..`),i=r.pop()??e,a=t(n,...r);return a?{name:i,path:a}:{name:i}}function i(n,r){return t(n.path,r?e(n.name):void 0)||void 0}export{r as i,n,t as r,i as t};

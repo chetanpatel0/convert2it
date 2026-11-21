@@ -1,0 +1,1 @@
+import{t as e}from"./worker-BUXP8p_b.js";const t=e;export{t};
