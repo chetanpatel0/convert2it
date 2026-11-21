@@ -9,8 +9,7 @@ runs locally on the visitor's device via WebAssembly and web workers — your fi
 the machine.
 
 - **Live site (GitHub Pages):** https://chetanpatel0.github.io/convert2it/
-- **Developer:** [ChetanPatel](https://github.com/chetanpatel0)
-- **Contact:** [Discord](https://discord.com/users/patel_chetan) · [Telegram](https://t.me/patel_chetan)
+- **Contact:** [Discord](https://discord.com/users/patel_chetan)
 
 ## Features
 
