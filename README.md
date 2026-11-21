@@ -22,6 +22,7 @@ the machine.
   `SharedArrayBuffer`-backed tools (ffmpeg, sqlite, and friends) work even on hosts that
   cannot set COOP/COEP headers.
 - Long-lived hashed assets + a precomputed format cache (`dist/cache.json`) for fast loads.
+- Fully secured and On Device Processing. it never touch your files to any server or internet.
 
 ### Installable PWA
 
