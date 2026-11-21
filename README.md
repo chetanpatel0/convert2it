@@ -12,16 +12,6 @@ the machine.
 - **Developer:** [ChetanPatel](https://github.com/chetanpatel0)
 - **Contact:** [Discord](https://discord.com/users/patel_chetan) · [Telegram](https://t.me/patel_chetan)
 
-## Why this exists
-
-Most online converters upload your files to a server, which is bad for privacy, and they force
-you to stay inside one medium. Convert2it lets you do things like AVI → PDF, PSD → SVG, or
-MIDI → WAV without sending a single byte off-device.
-
-This project is a rebranded, self-hosted build of the open-source
-[Convert to it!](https://github.com/p2r3/convert) project by p2r3. All conversion handlers come
-from upstream. See [Credits & license](#credits--license).
-
 ## Features
 
 - 100% static site — one `dist/` folder, no server code, no database, no API keys.
@@ -133,15 +123,6 @@ Drag the packaged zip (or the `dist/` folder) into Netlify Drop, or connect the 
 `pandoc-*.wasm` at ~59 MB and `typst_ts_web_compiler_bg-*.wasm` at ~27 MB, so a plain upload
 will fail there unless you drop those handlers or host the large WASM files elsewhere.
 
-### Puter
-
-Puter serves static folders, so the build works as-is: upload the **contents of `dist/`** into
-your site's folder (via the Puter desktop file manager or its site/deploy flow) and open the
-served URL. No build step or server config is required on Puter's side. Because the app relies
-on `crossOriginIsolated` for some tools, make sure the site is opened over HTTPS (Puter sites
-are) and give the service worker a moment to activate on first visit — the page reloads itself
-once.
-
 ### cPanel / Apache / nginx
 
 - cPanel/Apache: upload `dist/` contents to `public_html/` (or a subfolder) and keep
@@ -167,10 +148,19 @@ dist/                 build output (generated, git-ignored)
 
 ## Credits & license
 
-- Upstream project: [p2r3/convert](https://github.com/p2r3/convert) ("Convert to it!") by
-  PortalRunner / p2r3. Huge thanks to everyone who built the original converter and its
-  format handlers.
+- project: [p2r3/convert](https://github.com/p2r3/convert) ("Convert to it!") by
+  PortalRunner / p2r3. Huge thanks to everyone who built the converter and its
+  format handlers. I really thanks to you!
 - This fork changes branding, the help panel, build defaults, and adds deployment files.
 - Licensed under **GPL-2.0-or-later**, same as upstream. `LICENSE` is unchanged. If you
   redistribute this site, keep the license, the copyright notices, and credit to the upstream
   project. The app is provided without warranty.
+  
+## Why this exists
+
+Most online converters upload your files to a server, which is bad for privacy, and they force
+you to stay inside one medium. Convert2it lets you do things like AVI → PDF, PSD → SVG, or
+MIDI → WAV without sending a single byte off-device.
+
+[Convert to it!](https://github.com/p2r3/convert) project by p2r3. All conversion handlers come
+from upstream. See [Credits & license](#credits--license).
